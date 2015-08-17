@@ -1,0 +1,273 @@
+body {
+	background-color: #fffff;
+	margin: 0px;
+	background-image: url('img/background.png');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+h1,
+h2,
+p {
+	color: white;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	font-size: 35px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+p { 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	-webkit-font-smoothing:antialiased;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.4em;
+	color: white;
+	opacity: 1;
+	border-top: 1px solid rgba(255, 255, 255, 1);
+	padding-top: 10px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.contact a {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.contact a:hover {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+a:hover {
+	opacity: 1;
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+p a:hover {
+	opacity: 1;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.description { 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	-webkit-font-smoothing:antialiased;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.2em;
+	color: white;
+	opacity: 1;
+	border-top: 1px solid rgba(255, 255, 255, 1);
+	padding-top: 260px;
+	text-align: center;
+	margin-top: 0px;
+	margin-top: 0px;
+}
+
+.contact { 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	-webkit-font-smoothing:antialiased;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.4em;
+	color: white;
+	opacity: 0.75;
+	padding-top: 10px;
+	margin-top: 10px;
+	position: absolute;
+	bottom: 90px;
+	left: 36%;
+}
+
+
+.wrapper{
+	overflow: auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: 300px;
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.wrapper:after {
+content: '';
+position: fixed;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+border: 20px solid rgba(255,255,255,1);
+ }
+
+.table-wrapper{
+	position: relative;
+	z-index: 500;
+	display: table;
+	height: 100%;
+	width: 230px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table-wrapper2{
+	position: relative;
+	z-index: 300;
+	display: table;
+	height: 100%;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table-center{
+	display: table-cell;
+	padding-top: 150;
+}
+
+.icons {
+	z-index: 1000;
+	margin-left: -190px;
+	display: block;
+	position: absolute;
+	bottom: 135px;
+	left: 50%;
+}
+
+.twitter,
+.dribbble,
+.feedly,
+.linkedin,
+.medium,
+.pinterest,
+.behance,
+.instagram,
+.email {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-size: 40px;
+	float: left;
+	opacity: 0.5;
+	
+}
+
+.dribbble,
+.feedly,
+.linkedin,
+.medium,
+.pinterest,
+.behance,
+.instagram,
+.email {
+	margin-left: 10px;
+}
+
+a.twitter:hover,
+a.dribbble:hover,
+a.feedly:hover,
+a.linkedin:hover,
+a.medium:hover,
+a.pinterest:hover,
+a.behance:hover,
+a.instagram:hover,
+a.email:hover {
+	opacity: 1;
+}
+
+.twitter {
+	background-image: url(img/twitter.png);
+}
+
+.dribbble {
+	background-image: url(img/dribbble.png);
+	opacity: 0.5;
+}
+
+.feedly {
+	background-image: url(img/feedly.png);
+}
+
+.linkedin {
+	background-image: url(img/linkedin.png);
+}
+
+.medium {
+	background-image: url(img/medium.png);
+}
+
+.pinterest {
+	background-image: url(img/pinterest.png);
+	opacity: 0.5;
+}
+
+.behance {
+	background-image: url(img/behance.png);
+	opacity: 0.5;
+}
+
+.instagram {
+	background-image: url(img/instagram.png);
+	opacity: 0.5;
+}
+.email {
+	background-image: url(img/email.png);
+}
+
+@media screen and (max-width: 500px) {
+.wrapper{
+	background-image: url(logo-mobile.png);
+}
+}
+
+@media screen and (max-width: 400px) {
+	.wrapper{
+		background-size: 250px;
+	}
+	.icons {
+		margin-left: -98px;
+	}
+	.dribbble,
+	.feedly,
+	.linkedin,
+	.medium,
+	.pinterest,
+	.behance,
+	.instagram,
+	.email {
+		margin-left: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
