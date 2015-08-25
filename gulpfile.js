@@ -2,6 +2,7 @@ var gulp = require('gulp');
 
 var csscomb = require('gulp-csscomb');
 var htmlhint = require('gulp-htmlhint');
+var minifyCSS = require('gulp-minify-css');
 var postcss = require('gulp-postcss');
 var sass = require('gulp-sass');
 
@@ -16,11 +17,9 @@ gulp.task('HTMLlint', function(){
 });
 
 gulp.task('csscomb', function(){
-    return gulp.src([
-        './app/assets/stylesheets/atomic/**/*.sass'
-    ])
+    return gulp.src(['./sass/**/*.scss'])
     .pipe(csscomb())
-    .pipe(gulp.dest('app/assets/stylesheets/atomic'));
+    .pipe(gulp.dest('./sass'));
 });
 
 gulp.task('sass', function(){
@@ -30,6 +29,9 @@ gulp.task('sass', function(){
     gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
+    .pipe(minifyCSS({
+      keepBreaks: true
+    }))
     .pipe(gulp.dest('./css'));
 });
 
