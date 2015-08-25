@@ -46,8 +46,24 @@ h1,h2{margin-top:0}
 @media screen and (max-width:600px){.pao-content{width:100%;margin:0;padding:50px}
 }
 .pao-content .pao-section{margin-bottom:50px}
+.pao-content .fadein,.pao-content h1,.pao-content h2{-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.pao-content h1,.pao-content h2{-webkit-animation-name:fadein-drop;animation-name:fadein-drop;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}
+.pao-content h2{-webkit-animation-delay:.5s;animation-delay:.5s}
+.pao-content .fadein{-webkit-animation-name:fadein;animation-name:fadein;-webkit-animation-delay:1s;animation-delay:1s}
 @media screen and (max-height:600px){.pao-description{display:none}
 }
 .pao-links a{-webkit-transition:opacity 200ms;transition:opacity 200ms;opacity:.5}
 .pao-links a:hover{text-decoration:none;opacity:1}
 .pao-links img{width:40px}
+@-webkit-keyframes fadein-drop{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%);opacity:0}
+100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}
+}
+@keyframes fadein-drop{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%);opacity:0}
+100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}
+}
+@-webkit-keyframes fadein{0%{opacity:0}
+100%{opacity:1}
+}
+@keyframes fadein{0%{opacity:0}
+100%{opacity:1}
+}
