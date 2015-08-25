@@ -1,0 +1,87 @@
+@import "node_modules/normalize.css/normalize";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+
+    height: 100vh;
+    padding: 20px;
+
+    color: white;
+    background-color: white;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .9em;
+    font-weight: 300;
+}
+
+// Links
+a {
+    text-decoration: none;
+
+    color: white;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Headings
+h1, h2 {
+    margin-top: 0;
+
+    font-weight: 300;
+}
+
+// Styles
+.pao-wrapper {
+    height: 100%;
+
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pao-content {
+    width: percentage(2/5);
+    margin-left: percentage(1/5);
+    padding-top: 140px;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        margin: 0;
+        padding: 50px;
+    }
+
+    .pao-section {
+        margin-bottom: 50px;
+    }
+}
+
+.pao-description {
+    @media screen and (max-height: 600px) {
+        display: none;
+    }
+}
+
+.pao-links {
+    a {
+        transition: opacity 200ms;
+
+        opacity: .5;
+
+        &:hover {
+            text-decoration: none;
+
+            opacity: 1;
+        }
+    }
+
+    img {
+        width: 40px;
+    }
+}
