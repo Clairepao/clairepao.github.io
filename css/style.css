@@ -54,6 +54,7 @@ h1,h2{margin-top:0}
 }
 .pao-links a{-webkit-transition:opacity 200ms;transition:opacity 200ms;opacity:.5}
 .pao-links a:hover{text-decoration:none;opacity:1}
+.pao-links a:hover img{-webkit-animation:heartbeat 2s infinite;animation:heartbeat 2s infinite}
 .pao-links img{width:40px}
 @-webkit-keyframes fadein-drop{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%);opacity:0}
 100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}
@@ -66,4 +67,10 @@ h1,h2{margin-top:0}
 }
 @keyframes fadein{0%{opacity:0}
 100%{opacity:1}
+}
+@-webkit-keyframes heartbeat{0%,40%,80%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+20%,60%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}
+}
+@keyframes heartbeat{0%,40%,80%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+20%,60%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}
 }
