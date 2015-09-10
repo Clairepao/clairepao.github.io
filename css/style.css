@@ -41,7 +41,7 @@ table{border-collapse:collapse;border-spacing:0}
 *{box-sizing:border-box}
 a:hover{text-decoration:underline}
 h1,h2{margin-top:0}
-.pao-wrapper{height:100%;background-image:url(../img/background.png);background-repeat:no-repeat;background-position:center;background-size:cover}
+.pao-wrapper{height:100%;background-image:url(../img/background.png);background-repeat:no-repeat;background-position:bottom right;background-size:cover}
 .pao-content{width:40%;margin-left:20%;padding-top:140px}
 @media screen and (max-width:600px){.pao-content{width:100%;margin:0;padding:50px}
 }
