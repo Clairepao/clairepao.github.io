@@ -5,7 +5,7 @@ img,legend{border:0}
 legend,td,th{padding:0}
 body,h1,h2{font-weight:300}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{margin:0;height:100vh;padding:20px;background-color:#fff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:.9em}
+body{margin:0;height:100vh;padding:20px;background-color:#fff;font-family:"lato",lato;font-size:.9em}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
 audio:not([controls]){display:none;height:0}
