@@ -1,13 +1,13 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-h1{color:#00BCD3;;font-weight:400}
+h1{color:#FFF;;font-weight:400}
 h2{color:##8d8d8d;font-size: 18px}
-body{color: #8d8d8d;font-size: 18px}
-a{color:#00BCD3}
+body{color: #FFF;font-size: 18px}
+a{color:#FFF}
 body,svg:not(:root){overflow:hidden}
 img,legend{border:0}
 legend,td,th{padding:0}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{margin:0;height:100vh;padding:20px;background-color:#F5F5F5;font-family:"lato",lato;font-size:.9em}
+body{margin:0;height:100vh;padding:20px;background-color:#eceff1;font-family:"lato",lato;font-size:.9em}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
 audio:not([controls]){display:none;height:0}
@@ -43,7 +43,7 @@ table{border-collapse:collapse;border-spacing:0}
 *{box-sizing:border-box}
 a:hover{text-decoration:underline}
 h1,h2{margin-top:0}
-.pao-wrapper{height:100%;background: #fff;background-repeat:no-repeat;background-position:bottom right;background-size:cover}
+.pao-wrapper{height:100%;background: #304ffe;background-repeat:no-repeat;background-position:bottom right;background-size:cover}
 .pao-content{width:40%;margin-left:20%;padding-top:140px}
 @media screen and (max-width:600px){.pao-content{width:100%;margin:0;padding:50px}
 }
