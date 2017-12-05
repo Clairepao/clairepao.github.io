@@ -1,5 +1,5 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-h1{color:#FFF;;font-weight:400}
+h1{color:#FFF;;font-weight:600}
 h2{color:##8d8d8d;font-size: 18px}
 body{color: #FFF;font-size: 18px}
 a{color:#FFF}
@@ -43,7 +43,7 @@ table{border-collapse:collapse;border-spacing:0}
 *{box-sizing:border-box}
 a:hover{text-decoration:underline}
 h1,h2{margin-top:0}
-.pao-wrapper{height:100%;background: #304ffe;background-repeat:no-repeat;background-position:bottom right;background-size:cover}
+.pao-wrapper{height:100%;background-image:url(../img/background.png);background-repeat:no-repeat;background-position:bottom right;background-size:cover}
 .pao-content{width:40%;margin-left:20%;padding-top:140px}
 @media screen and (max-width:600px){.pao-content{width:100%;margin:0;padding:50px}
 }
