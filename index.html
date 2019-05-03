@@ -35,6 +35,8 @@
 				g.clearUserCookie=function(){};
 			})(window,document,window['_fs_namespace'],'script','user');
 			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.2/lottie.min.js" type="text/javascript">
+			</script>
 	</head>
 	<body>
 		<div class="pao-wrapper">
@@ -56,7 +58,8 @@
 						<br>
 						<a href="mailto:paoletticlaire@gmail.com">Email</a>, <a href="https://twitter.com/clairepaoletti" target="_blank">Twitter</a>, <a href="https://dribbble.com/clairepaoletti" target="_blank">Dribbble</a>, <a href="https://medium.com/@clairepaoletti" target="_blank">Medium</a>, <a href="https://linkedin.com/in/clairepaoletti" target="_blank">LinkedIn</a>, <a href="https://instagram.com/clairepao/" target="_blank">Instagram</a>
 					</p>
-
+					<div class="lottie-animation">
+					</div>
 			</div>
 		</div>
 
@@ -68,6 +71,15 @@
 
 		  ga('create', 'UA-66421910-1', 'auto');
 		  ga('send', 'pageview');
+		</script>
+		<script> 
+		lottie.loadAnimation({
+		container: document.getElementById('lottie-animation'),
+		renderer: 'svg',
+		path: "https://dl.dropboxusercontent.com/s/o76gmumkj4jehyu/data.json",
+		loop: true,
+		autoplay: true,
+		});
 		</script>
 	</body>
 </html>
