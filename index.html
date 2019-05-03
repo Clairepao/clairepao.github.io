@@ -73,13 +73,15 @@
 		  ga('send', 'pageview');
 		</script>
 		<script> 
-		lottie.loadAnimation({
-		container: document.getElementById('lottie-animation'),
-		renderer: 'svg',
-		path: "https://dl.dropboxusercontent.com/s/o76gmumkj4jehyu/data.json",
-		loop: true,
-		autoplay: true,
-		});
+		window.addEventListener('load', function() {
+			lottie.loadAnimation({
+			container: document.getElementById('lottie-animation'),
+			renderer: 'svg',
+			path: "https://dl.dropboxusercontent.com/s/o76gmumkj4jehyu/data.json",
+			loop: true,
+			autoplay: true,
+			});
+		})		
 		</script>
 	</body>
 </html>
