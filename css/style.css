@@ -368,7 +368,7 @@ body {
     color: white;
     background-color: white;
 
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Montserrat;
     font-size: .9em;
     font-weight: 300;
     line-height: normal;
@@ -391,7 +391,7 @@ h1, h2 {
 
 .pao-wrapper {
     height: 100%;
-    background-image: url("../img/background.png");
+    background-color: #09012B;
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
