@@ -365,7 +365,7 @@ body {
 
     height: 100vh;
 
-    color: white;
+    color: #191620;
     background-color: white;
 
     font-family: Montserrat;
@@ -376,7 +376,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(25, 22, 32);
 }
 
 a:hover {
@@ -391,7 +391,7 @@ h1, h2 {
 
 .pao-wrapper {
     height: 100%;
-    background-color: #09012B;
+    background-color: #fdfdff;
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
