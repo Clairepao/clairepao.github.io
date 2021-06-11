@@ -376,6 +376,7 @@ body {
 
 a {
     text-decoration: none;
+    text-decoration: bold;
     color: rgb(25, 22, 32);
 }
 
