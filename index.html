@@ -1,80 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="description" content="Design at Bannerman.">
-    <meta name="keywords" content="claire, paoletti, claire paoletti, claire paoletti product designer, claire paoletti livre, design, claire design, claire paoletti titeuf, paoletti design, dyslexie design, bannerman design, ux design claire paoletti, ui design claire paoletti, startup claire paoletti,claire paoletti designer, claire designer, paoletti designer">
-    <meta id="vp" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Claire Paoletti product designer</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@clairepao">
-
-    <meta property="og:title" content="Claire Paoletti">
-    <meta property="og:description" content="Ux & Ui Design at Bannerman">
-    <meta property="og:url" content="http://www.clairepaoletti.com">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script>
-        // FullStory script
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.2/lottie.min.js" type="text/javascript"></script>
+    <!-- Other head tags -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/rss-parser/3.10.0/rss-parser.min.js"></script>
 </head>
 <body>
     <div class="pao-wrapper">
         <div class="pao-content">
-            <div class="pao-section">
-                <h1>Claire Paoletti</h1>
-                <h2>Senior Product Designer</h2>
-            </div>
+            <!-- Other content -->
+			
+			<p>
+				You can find me here:
+			</p>
+			<!-- Add your Medium articles section here -->
+			<div class="medium-articles"></div>
+			
+		</div>
+	</div>
+	
+	<script>
+		// Create a new RSS Parser instance
+		const parser = new RSSParser();
 
-            <div class="pao-section pao-description">
-                <p>
-                    I'm Product Designer at <a href="https://www.castordoc.com/" target="_blank"><strong>Castor</strong></a> in Paris.
-                </p>
-                <p>
-                    Data people spend too much time trying to find and understand the data they have. We are building a tool, inspired by tech giant internal tools (Uber’s Databook, Airbnb’s Data Portal, Lyft’s Amundsen …), to redesign how companies document their data.
-                </p>
-                <p>
-                    It's a plug & play, collaborative data discovery solution designed for scale-ups.
-                </p>
-                <p>
-                    You can find me here:
-                </p>
-                <p>
-                    <a href="mailto:paoletticlaire@gmail.com">Email</a>, <a href="https://twitter.com/clairepao" target="_blank">Twitter</a>, <a href="https://dribbble.com/clairepaoletti" target="_blank">Dribbble</a>, <a href="https://medium.com/@clairepaoletti" target="_blank">Medium</a>, <a href="https://linkedin
+		// Your Medium RSS feed URL
+		const feedUrl = 'https://medium.com/feed/@clairepaoletti';
 
+		// Fetch and parse the RSS feed
+		parser.parseURL(feedUrl, (err, feed) => {
+			if (err) {
+				console.error('Error fetching Medium articles:', err);
+				return;
+			}
 
-					// medium
-					<div class="medium-articles"></div>
-					<script>
-					// Create a new RSS Parser instance
-					const parser = new RSSParser();
-					// Your Medium RSS feed URL
-					const feedUrl = 'https://medium.com/feed/@clairepaoletti';
-					// Fetch and parse the RSS feed
-					 parser.parseURL(feedUrl, (err, feed) => {
-						 if (err) {
-							 console.error('Error fetching Medium articles:', err);
-							  return;
-							}
-							const mediumArticles = document.querySelector('.medium-articles');
-							// Loop through the articles and display them
-							feed.items.forEach(item => {
-								const article = document.createElement('div');
-								article.classList.add('medium-article');
+			const mediumArticles = document.querySelector('.medium-articles');
 
-								const title = document.createElement('h3');
-								 title.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
-								 const date = document.createElement('p');
-								 date.classList.add('medium-article-date');
-								 date.textContent = new Date(item.pubDate).toLocaleDateString();
-								 article.appendChild(title);
-								 article.appendChild(date);
-								 mediumArticles.appendChild(article);
-								});
-								});
-								</script>
+			// Loop through the articles and display them
+			feed.items.forEach(item => {
+				const article = document.createElement('div');
+				article.classList.add('medium-article');
+
+				const title = document.createElement('h3');
+				title.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
+
+				const date = document.createElement('p');
+				date.classList.add('medium-article-date');
+				date.textContent = new Date(item.pubDate).toLocaleDateString();
+
+				article.appendChild(title);
+				article.appendChild(date);
+				mediumArticles.appendChild(article);
+			});
+		});
+	</script>
+</body>
+</html>
