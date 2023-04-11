@@ -50,34 +50,6 @@
 			</div>
 	
 			<div class="medium-articles"></div>
-			<script>
-				// Create a new RSS Parser instance
-				const parser = new RSSParser();
-				// Your Medium RSS feed URL
-				const feedUrl = 'https://medium.com/feed/@clairepaoletti';
-				// Fetch and parse the RSS feed
-				parser.parseURL(feedUrl, (err, feed) => {
-					if (err) {
-						console.error('Error fetching Medium articles:', err);
-						return;
-					}
-					const mediumArticles = document.querySelector('.medium-articles');
-					// Loop through the articles and display them
-					feed.items.forEach(item => {
-						const article = document.createElement('div');
-						article.classList.add('medium-article');
-	
-						const title = document.createElement('h3');
-						title.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
-						const date = document.createElement('p');
-						date.classList.add('medium-article-date');
-						date.textContent = new Date(item.pubDate).toLocaleDateString();
-						article.appendChild(title);
-						article.appendChild(date);
-						mediumArticles.appendChild(article);
-					});
-				});
-			</script>
 		</div>
 	</div>
 </body>
