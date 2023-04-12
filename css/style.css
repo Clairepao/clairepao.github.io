@@ -365,7 +365,7 @@ body {
 
     height: 100vh;
 
-    color: #191620;
+    color: #000;
     background-color: #f7f5f0;
 
     font-family: Montserrat;
@@ -395,7 +395,6 @@ h2 {
 
 .pao-wrapper {
     height: 100%;
-    background-color: #fdfdff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
